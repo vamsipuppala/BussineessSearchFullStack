@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link href="static/make_style_1.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="inside-container">
+            <!-- <img class="header_image" src="static/banner.jpeg"> -->
+            <div class="top-left">Business Search</div>
+            <div class="bottom-left">Fill out the form to get businesses near you!</div>
+        </div>
+        
+        
+        <form id="formid">
+          <label>Keyword</label> <label class="star">*</label><br>
+          <input type="text" id="Keyword" class="Keyword" required="required" /><br><br>
+          <div class = "flex_box_top">
+            <div>
+          <label class="Distance">Distance(miles)</label><label class="star">   *</label>
+          <input type="text" id="Distance" value="10" class="Distance_input"  required="required" />
+        </div>
+        <div>
+          <label for="Options" class="category">Category</label><label class="star">   *</label>
+          
+          <select id="Options" name="Options" class="Options">
+                <option value="Default">Default</option>
+                <option value="Arts & Entertainment">Arts & Entertainment</option>
+                <option value="Health & Medical">Health & Medical</option>
+                <option value="Hotels & Travel">Hotels & Travel</option>
+                <option value="Food">Food</option>
+                <option value="Professional Services">Professional Services</option>
+          </select>
+        </div>
+        </div>
+          <br>
+          <br>
+          <label>Location</label><label class="star">   *</label>
+          <br>
+          <input type="text" id="Location" class="Keyword" required="required">
+          <br>
+          <br>
+          <hr>
+          <br>
+          <label>Want us to auto-detect your location? Check here</label>
+          <input type="checkbox" id="get_loc" onclick="myCheckBox()">
+          <br>
+          <div style = "display:flex;">
+          <div id="button_span" style="width:109px; height:50px; margin-top: 30px;"><button id="submit" type="submit" onclick="mySubmit(event)">SUBMIT</button></div>
+          <div id="button_cancel" style="width:108px; height:50px; margin-top: 30px; margin-left: 10px;"><button id="cancel" onclick="myCancel(event)">CLEAR</button></form></div>
+        </div>
+        </form>
+        
+       
+        
+        <br>
+        
+    </div>
+    <div id="table1_block"></div>
+    <div id="details_block"></div>
+    <script src="/static/my_javascript.js"></script>
+  </body>
+</html>
